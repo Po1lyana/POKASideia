@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="módulostyle.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Módulo 3</title>
+
+</head>
+<body>
+
+    <ul>
+        <li class="login">
+            <a href="login.html">
+            <span class="icone 1"><i class='bx bxs-user'></i></span>
+            </a>
+        </li>
+    </ul>
+
+    <div a class="titulo">
+        <h1>
+            <img src="POKAS ideia 2.png" alt="POKASideia" width="380px" height="140px">
+
+        </h1>
+        </div>
+
+        <div class="block">
+            <div class="subtitulo">
+            <h2>
+                <img src="módulo 3.png" alt="python" width="380px" height="140px">
+            </h2>
+            </div>
+
+
+
+            <div class="int">
+                <h1>➛ Introdução</h1>
+            </div>
+
+            <div class="text">
+                <h4>No módulo 3 você vai aprender na prática códigos de ordenação em Python. Então já pegue seu caderno ou computador e vamos PROGRAMAR!</h4>
+            </div>
+
+            <br>
+
+            <div class="int">
+                <h1>➛ Ordenação por permutação</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a ordenação por permutação:
+                    <br><br>
+                    
+                    <a class="programa">n = int(input("Entre com a dimensão do vetor:  ")) <br>
+                        vetor=[] <br>
+                        for i in range(0, n): <br>
+                            vetor.append(int(input(f"Entre com a posição {i} do vetor:  "))) <br>
+                        print("Vetor não ordenado\n") <br>
+                        for i in range(0, n): <br>
+                            print(f"[{vetor[i]}]",end=' ') <br>
+                        for i in range(0,n): <br>
+                            for j in range(n-1,i,-1): <br>
+                                if vetor[i]>vetor[j]: <br>
+                                    aux=vetor[i]  <br>
+                                    vetor[i]=vetor[j] <br>
+                                    vetor[j]=aux <br>
+                        print("\nVetor ordenado \n:") <br>
+                        for i in range(0, n): <br>
+                            print(f"[{vetor[i]}]",end=' ')</a> <br><br>
+                </h4>
+            </div>
+
+            <div class="int">
+                <h1>➛ Inserção Binária</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a ordenação por permutação:
+                    <br><br>
+                    
+                    <a class="programa">n = int(input("Entre com a dimensão do vetor:  ")) <br>
+                        vetor=[] <br>
+                        for i in range(0, n): <br>
+                            vetor.append(int(input(f"Entre com a posição {i} do vetor:  "))) <br>
+                        print("Vetor não ordenado\n") <br>
+                        for i in range(0, n): <br>
+                            print(f"[{vetor[i]}]",end=' ') <br>
+                        for i in range(1,n): <br>
+                            temp=vetor[i] <br>
+                            l=0 <br>
+                            r=i <br>
+                            while l < r: <br>
+                                pos= int((l+r)/2) <br>
+                                if(vetor[pos]<=temp): <br>
+                                    l=pos+1 <br>
+                                else: <br>
+                                    r=pos <br>
+                            for j in range(i,r,-1): <br>
+                                vetor[j]=vetor[j-1] <br>
+                            vetor[r]=temp <br>
+                        print("\nVetor Ordenado:\n") <br>
+                        for i in range(0, n): <br> 
+                            print(f"[{vetor[i]}]",end=' ')</a> <br><br>
+                </h4>
+            </div>
+
+
+            <div class="int">
+                <h1>➛ Inserção Direta</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a ordenação por permutação:
+                    <br><br>
+                    
+                    <a class="programa">n = int(input("Entre com a dimensão do vetor:  ")) <br>
+                        vetor=[] <br>
+                        for i in range(0, n): <br>
+                          vetor.append(int(input(f"Entre com a posição {i} do vetor:  "))) <br>
+                        print("Vetor não ordenado\n") <br>
+                        for i in range(0, n): <br>
+                          print(f"[{vetor[i]}]",end=' ') <br>
+                        for i in range(1,n): <br>
+                          x=vetor[i] <br>
+                          j=i <br>
+                          while j>0 and x < vetor[j-1]: <br>
+                            vetor[j]=vetor[j-1] <br>
+                            j=j-1 <br>
+                          vetor[j]=x <br>
+                        print("\nVetor ordenado: \n") <br>
+                        for i in range(0, n): <br>
+                          print(f"[{vetor[i]}]",end=' ')</a> <br><br>
+                </h4>
+            </div>
+
+
+            <div class="int">
+                <h1>➛ Seleção direta</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a ordenação por permutação:
+                    <br><br>
+                    
+                    <a class="programa">n = int(input("Entre com a dimensão do vetor:  ")) <br>
+                        vetor=[] <br>
+                        for i in range(0, n): <br>
+                          vetor.append(int(input(f"Entre com a posição {i} do vetor:  "))) <br>
+                        print("Vetor não ordenado\n") <br>
+                        for i in range(0, n): <br>
+                          print(f"[{vetor[i]}]",end=' ') <br>
+                        for i in range(0,n): <br>
+                          k=i <br>
+                          x=vetor[i] <br>
+                          for j in range(i+1,n): <br>
+                            if(vetor[i]>vetor[j]): <br>
+                              k=j <br>
+                              x=vetor[k] <br>
+                            vetor[k]=vetor[i] <br>
+                            vetor[i]=x <br>
+                        print("\nVetor ordenado: \n") <br>
+                        for i in range(0, n): <br>
+                          print(f"[{vetor[i]}]",end=' ')</a> <br><br>
+                </h4>
+            </div>
+
+
+            <div class="int">
+                <h1>➛ Bolha</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a ordenação por permutação:
+                    <br><br>
+                    
+                    <a class="programa">n = int(input("Entre com um numero = ")) <br>
+                        vet=[] <br>
+                        for i in range(0, n): <br>
+                          vet.append(int(input(f"Entre com a posiçao{i} = "))) <br>
+                        for i in range(0,n): <br>
+                          print(vet[i], end=' ') <br>
+                        ind2=n <br>
+                        troquei=1 <br>
+                        while(troquei==1): <br>
+                          troquei=0 <br>
+                          for i in range(0,ind2-1): <br>
+                            if(vet[i]>vet[i+1]): <br>
+                              aux = vet[i] <br>
+                              vet[i] = vet[i+1] <br>
+                              vet[i+1] = aux <br>
+                              troquei=1 <br>
+                          ind2 = ind2 - 1     <br>
+                        print(f"\nVetor ordenado por bolha:") <br>
+                          for i in range(0,n): <br>
+                            print(vet[i],end=' ') <br></a>
+                            ------------------------------------------------------------- <br><br>
+                </h4>
+            </div>
+
+            <div class="int">
+                <h1>BUSCAS NO VETOR</h1>
+                <h1>➛ Simples</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a ordenação por permutação:
+                    <br><br>
+                    
+                    <a class="programa">n = int(input("Entre com um numero = ")) <br>
+                        vet=[] <br>
+                        for i in range(0, n): <br>
+                          vet.append(int(input(f"Entre com a posiçao{i} = "))) <br>
+                        for i in range(0,n): <br>
+                          print(vet[i], end=' ') <br>
+                        ind2=n <br>
+                        troquei=1 <br>
+                        while(troquei==1): <br>
+                          troquei=0 <br>
+                          for i in range(0,ind2-1): <br>
+                            if(vet[i]>vet[i+1]): <br>
+                              aux = vet[i] <br>
+                              vet[i] = vet[i+1] <br>
+                              vet[i+1] = aux <br>
+                              troquei=1 <br>
+                          ind2 = ind2 - 1     <br>
+                        print(f"\nVetor ordenado por bolha:") <br>
+                          for i in range(0,n): <br>
+                            print(vet[i],end=' ') <br></a> <br><br>
+                </h4>
+            </div>
+
+
+            <div class="int">
+                <h1>➛ Binária</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a ordenação por permutação:
+                    <br><br>
+                    
+                    <a class="programa">n = int(input("Entre com um numero = ")) <br>
+                        vet=[] <br>
+                        for i in range(n): <br>
+                          ok=0 <br>
+                          valor = int(input(f"Entre com a posição {i} = ")) <br>
+                          while(ok==0): <br>
+                            if valor in vet: <br>
+                              print("Não é permitido ter posições com valores iguais") <br>
+                              valor = int(input(f"Entre com a posição {i} = ")) <br>
+                            else: <br>
+                              vet.append(valor) <br>
+                              ok=1 <br>
+                        print("Vetor:\n") <br>
+                        for i in range(0,n): <br>
+                          print(f"[{vet[i]}]",end=' ') <br>
+                        for i in range(0,n): <br>
+                          for j in range(n-1,i,-1): <br>
+                            if vet[i] > vet[j]: <br>
+                              temp = vet[i] <br>
+                              vet[i] = vet[j] <br>
+                              vet[j] = temp      <br>
+                        print("\nVetor ordenado:\n") <br>
+                        for i in range(0,n): <br>
+                          print(f"[{vet[i]}]",end=' ') <br>
+                        ele = int(input("\nEntre com um numero = ")) <br>
+                        l=0  <br>
+                        r=n-1 <br>
+                        while(r>l): <br>
+                          pos=int((l+r)/2) <br>
+                          if(vet[pos]>ele): <br>
+                            r=pos-1 <br>
+                          else: <br>
+                            l=pos+1 <br>
+                          if vet[pos]==ele: <br>
+                            print(f"O elemento {ele} foi encontrado na posição {pos} do vetor") <br>
+                            r=l-1 <br>
+                          elif r==l: <br>
+                            if vet[r]==ele: <br>
+                              print(f"O elemento {ele} foi encontrado na posição {r} do vetor") <br>
+                            else: <br>
+                              print(f"O elemento {ele} não foi encontrado") <br></a>
+                              ------------------------------------------------------------- <br><br>
+                </h4>
+            </div>
+
+
+            <div class="int">
+                <h1>ORDENAÇÕES DE MATRIZ</h1>
+                <h1>➛ Linha</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a ordenação por permutação:
+                    <br><br>
+                    
+                    <a class="programa">import numpy as np <br>
+                        linhas = int(input("Digite o número de linhas: ")) <br>
+                        colunas = int(input("Digite o número de colunas: ")) <br>
+                        mat = np.zeros((linhas, colunas)) <br>
+                        for i in range(linhas): <br>
+                          for j in range(colunas): <br>
+                            valor = int(input(f"Digite o valor para a posição [{i}][{j}]: ")) <br>
+                            mat[i, j] = valor <br>
+                        for i in range(linhas): <br>
+                          print() <br>
+                          for j in range(colunas): <br>
+                            print(f"[{mat[i,j]}]",end=' ') <br>
+                        for k in range (0,linhas): <br>
+                          for i in range (0,colunas): <br>
+                            for j in range(linhas-1,i,-1): <br>
+                              if (mat[k][i]>mat[k][j]): <br>
+                                aux = mat[k][i] <br>
+                                mat[k][i] = mat[k][j] <br>
+                                mat[k][j] = aux <br>
+                        print(f"\nMatriz com suas linhas ordenadas") <br>
+                        for i in range(linhas): <br>
+                          print() <br>
+                          for j in range(colunas): <br>
+                            print(f"[{mat[i,j]}]",end=' ') <br></a><br><br>
+                </h4>
+            </div>
+
+
+            <div class="int">
+                <h1>➛ Colunas</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a ordenação por permutação:
+                    <br><br>
+                    
+                    <a class="programa">import numpy as np <br>
+                        linhas = int(input("Digite o número de linhas: ")) <br>
+                        colunas = int(input("Digite o número de colunas: ")) <br>
+                        mat = np.zeros((linhas, colunas)) <br>
+                        for i in range(linhas): <br>
+                          for j in range(colunas): <br>
+                            valor = int(input(f"Digite o valor para a posição [{i}][{j}]: ")) <br>
+                            mat[i, j] = valor <br>
+                        print("\nMatriz original:") <br>
+                        for i in range(linhas): <br>
+                          print() <br>
+                          for j in range(colunas): <br>
+                            print(f"[{mat[i,j]}]", end=' ') <br>
+                        for j in range(colunas): <br>
+                          for i in range(linhas - 1): <br>
+                            for k in range(i + 1, linhas): <br>
+                              if mat[i][j] > mat[k][j]: <br>
+                                aux = mat[i][j] <br>
+                                mat[i][j] = mat[k][j] <br>
+                                mat[k][j] = aux <br>
+                        print(f"\n\nMatriz com suas colunas ordenadas:") <br>
+                        for i in range(linhas): <br>
+                          print() <br>
+                          for j in range(colunas): <br>
+                            print(f"[{mat[i,j]}]", end=' ') <br></a><br><br>
+                </h4>
+            </div>
+
+
+            <div class="int">
+                <h1>➛ Inteira</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a ordenação por permutação:
+                    <br><br>
+                    
+                    <a class="programa">import numpy as np
+                        linhas = int(input("Digite o número de linhas: "))
+                        colunas = int(input("Digite o número de colunas: "))
+                        mat = np.zeros((linhas, colunas))
+                        for i in range(linhas):
+                          for j in range(colunas):
+                            valor = int(input(f"Digite o valor para a posição [{i}][{j}]: "))
+                            mat[i, j] = valor
+                        print("\nMatriz original:")
+                        for i in range(linhas):
+                          print()
+                          for j in range(colunas):
+                            print(f"[{mat[i,j]}]", end=' ')
+                        vet=[]
+                        for i in range(linhas):
+                          for j in range(colunas):
+                            vet.append(mat[i,j])
+                        n=linhas*colunas
+                        for i in range(0,n):
+                          for j in range(n-1,i,-1):
+                            if vet[i]>vet[j]:
+                              aux=vet[i]
+                              vet[i]=vet[j]
+                              vet[j]=aux
+                        k=0
+                        for i in range(linhas):
+                          for j in range(colunas):
+                            mat[i,j]=vet[k]
+                            k=k+1
+                        print("\nMatriz ordenada:")
+                        for i in range(linhas):
+                          print()
+                          for j in range(colunas):
+                            print(f"[{mat[i,j]}]", end=' ') <br></a><br><br>
+                </h4>
+            </div>
+
+
+            <div class="int">
+                <h1>➛ Busca na matriz</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a ordenação por permutação:
+                    <br><br>
+                    
+                    <a class="programa">import numpy as np <br>
+                        linhas = int(input("Digite o número de linhas: ")) <br>
+                        colunas = int(input("Digite o número de colunas: ")) <br>
+                        mat = np.zeros((linhas, colunas)) <br>
+                        for i in range(linhas): <br>
+                          for j in range(colunas): <br>
+                            valor = int(input(f"Digite o valor para a posição [{i}][{j}]: ")) <br>
+                            mat[i, j] = valor <br>
+                        print("\nMatriz:") <br>
+                        for i in range(linhas): <br>
+                          print() <br>
+                          for j in range(colunas): <br>
+                            print(f"[{mat[i,j]}]", end=' ')
+                        e = int(input("\nEntre com o número a ser buscado:  ")) <br>
+                        ok=0 <br>
+                        for i in range(linhas): <br>
+                          for j in range(colunas): <br>
+                            if(mat[i,j]==e): <br>
+                              ok=ok+1 <br>
+                              print(f"O número {e} foi encontrado na posição [{i},{j}] da matriz")   <br> 
+                        print(f"O número {e} foi encontrado {ok} vez(es):") <br></a><br><br>
+                </h4>
+            </div>
+
+            <div class="int">
+                <h1>➛ Video - Módulo 3:</h1>
+            </div>
+            
+            <div class="text">
+                <h4>
+                    Para mais informações assista o vídeo do nosso canal no youtube: <br><br><br><br>
+                </h4>
+            </div>
+
+            <div class="text">
+              <h4>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/x99jz2AUrIk?si=iHY7YXs3ceC0vKlv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <br>
+              </div>
+
+            <li class="cas">
+              <a href="app.py"  class="cada">app de criptografia</a>
+          </li>
+            
+
+    
+    <nav class="geral">
+        <div a class="menu">
+            <i class='bx bx-menu' id="exp"></i>
+        </div>
+
+    <ul>
+        <div class="itens">
+        <li class="item">
+            <a href="home.html">
+            <span class="icone"><i class='bx bx-home-alt-2' ></i></span>
+            <span class="link">Home</span>
+            </div>
+            </a>
+        </li>
+
+        <div class="active">
+        <li class="item">
+            <a href="hPyton.html">
+            <span class="icone"><i class='bx bxl-python'></i></span>
+            <span class="link">Python</span>
+            </div>
+            </a>
+        </li>
+
+
+        <li class="item">
+            <a href="#">
+            <span class="icone"><i class='bx bxs-memory-card'></i></span>
+            <span class="link">Arduino</span>
+            </a>
+        </li>
+
+        </div>
+    </ul>
+    </nav>
+
+
+    <script src="homeactive.js"></script>
+
+</body>
+</html>

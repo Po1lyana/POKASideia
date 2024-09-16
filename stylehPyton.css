@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #120012;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    font-size: 40px;
+    padding: 0 20px 10px 10px;
+    text-decoration: none;
+}
+
+.login i{
+    color: #DFB6B2;
+}
+
+.titulo{
+    margin-left: 40%;
+    margin-top: 30px;
+    position: relative;
+    width: 380px;
+}
+
+.subtitulo{
+    margin-left: 40%;
+    margin-top: 30px;
+    align-items: center;
+    width: 380px;
+}
+
+.poka{
+    position: absolute;
+}
+
+.centro{
+    padding: 80px 20% 0 0;
+    margin-left: 3px;
+}
+
+nav.geral{
+    width: 85px;
+    height: 100%;
+    background-color:#120012;
+    padding: 40px  0 40px 1%;
+    box-shadow: 3px 0 0 #854F6C;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+
+nav.geral.expandir{
+    width: 280px;
+}
+
+.menu{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.menu> i{
+    color:#DFB6B2;;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+.itens{
+    margin-top: 20px;
+}
+
+ul li.item{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: #854F6C;
+}
+
+ul li.item:hover{
+    background: #854F6C;
+}
+
+ul li.item a{
+    color: #DFB6B2;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 30px;
+}
+
+.active{
+    background-color:#854F6C;
+}
+
+ul li.item a .link{
+    margin-left: 35px;
+    transition: .5s;
+}
+
+nav.geral.expandir.link{
+    margin-left: 20px;
+}
+
+ul li.item a .icone > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    gap: 30px;
+    padding: 200px 240px 240px 240px;
+    cursor: pointer;
+    margin-left: 6%;
+}
+
+.image{
+   background-color:#2c002c;
+   text-align: center;
+   text-decoration: none;
+   height: 420px;
+   
+   border: 10px #854F6C;
+}
+
+.image a{
+    text-decoration: none;
+}
+
+.image h1{
+font-size: 1.2rem;
+color: #DFB6B2;
+margin-top: 18px;
+}
+
+.image h2{
+font-size: .9rem;
+color: #854F6C;
+padding: 4px 0px 10px 0px;
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="módulostyle.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Módulo 2</title>
+
+</head>
+<body>
+
+    <ul>
+        <li class="login">
+            <a href="login.html">
+            <span class="icone 1"><i class='bx bxs-user'></i></span>
+            </a>
+        </li>
+    </ul>
+
+    <div a class="titulo">
+        <h1>
+            <img src="POKAS ideia 2.png" alt="POKASideia" width="380px" height="140px">
+
+        </h1>
+        </div>
+
+        <div class="block">
+            <div class="subtitulo">
+            <h2>
+                <img src="módulo 2.png" alt="python" width="380px" height="140px">
+            </h2>
+            </div>
+
+            <div class="int">
+                <h1>➛ Introdução</h1>
+            </div>
+
+            <div class="text">
+                <h4>No módulo 2 você vai aprender na prática alguns códigos e comandos em Python. Então já pegue seu caderno ou computador e vamos PROGRAMAR!</h4>
+            </div>
+
+            <br>
+
+            <div class="int">
+                <h1>➛ Cálculo de fatorial</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta duas soluções para o cálculo de fatorial. <br>Uma utilizando a biblioteca <b>factorial</b> de Python e a outra da maneira convencional:
+                    <br><br>
+                    <a class="links">Solução 1:</a> <br>
+                    <a class="programa">from math import factorial <br>
+                    n = int(input('Digite um número para calcular o fatorial:')) <br>
+                    f = factorial(n) <br>
+                    print('O fatorial de {} é {}'. format(n,f))</a> <br><br>
+
+                    <a class="links">Solução 2:</a> <br>
+                    <a class="programa">n = int (input('Digite um número para calcular o fatorial:')) <br>
+                    c = n <br>
+                    f=1 <br>
+                    print('Calculando {}! ='.format(c), end=' ') <br>
+                    while c > 0: <br>
+                        print('{}'.format(c), end='') <br>
+                        print(' *' if c>1 else ' =', end=' ') <br>
+                        f = f*c <br>
+                        c -= 1 <br>
+                    print('{}'.format(f))</a> <br><br>
+                </h4>
+            </div>
+
+            <div class="int">
+                <h1>➛ Sequência de Fibonacci</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a sequência de Fibonacci:
+                    <br><br>
+                    <a class="programa">n = int(input('Digite um valor para a sequencia de Fibonacci: ')) <br>
+                    t1 = 0 <br>
+                    t2 = 1 <br>
+                    print('\033[31m {} - {}'.format(t1,t2), end=' ') <br><br>
+
+                    cont =3 <br>
+                    while cont <=n: <br>
+                    t3 = t1+t2 <br>
+                    t1=t2 <br>
+                    t2=t3 <br>
+                    print('\033[31m - {}\033[m'.format(t3), end=' ') <br>
+                    cont +=1 </a><br><br>
+                </h4>
+            </div>
+
+
+            <div class="int">
+                <h1>➛ Cálculo de números primos:</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a sequência de Fibonacci:
+                    <br><br>
+                    <a class="programa">
+                        n = int(input('Digite um número: ')) <br>
+                        cont =0 <br>
+                        for c in range(1, n+1): <br>
+                            if (n%c ==0): <br>
+                                print('\033[33m',end=' ') <br>
+                                cont +=1 <br>
+                            else: <br>
+                                print('\033[31m',end=' ') <br>
+                            print('{} '.format(c), end=' ') <br> <br>
+                        
+                        print('\n\033[mO número {} foi divisível {} vezez'.format(n,cont)) <br>
+                        if(cont==2): <br>
+                            print('Por isso ele É UM NÚMERO PRIMO!', end=' ') <br>
+                        else: <br>
+                            print('Por isso ele NÃO É UM NÚMERO PRIMO!', end=' ') <br>
+                        </a><br>
+                </h4>
+            </div>
+
+
+            <div class="int">
+                <h1>➛ Declaração de vetor:</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a sequência de Fibon:
+                    <br><br>
+                    <a class="programa">
+                        vetor = [] <br>
+                        for _ in range(5): <br>
+                        n = int(input('Digite um valor para o Vetor/Lista: ')) <br>
+                        vetor.append(n) <br><br>
+
+                        print(vetor) <br>
+                        </a><br>
+                </h4>
+            </div>
+
+
+            <div class="int">
+                <h1>➛ Declaração de matriz:</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a sequência de Fibon:
+                    <br><br>
+                    <a class="programa">
+                        matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]] <br>
+                        for l in range(0, 3): <br>
+                        for c in range(0, 3): <br>
+                        matriz[l][c] = int(input(f'Digite um valores para [{l}, {c}]: ')) <br>
+                        print('-=' *20) <br>
+                        for l in range(0, 3): <br>
+                        for c in range(0, 3): <br>
+                        print(f'[{matriz[l][c]}]',end=' ') <br>
+                        print() <br>
+                        </a><br> 
+                </h4>
+            </div>
+
+            <div class="int">
+                <h1>➛ Manipulação de arquivos:</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    O código abaixo apresenta uma solução para a sequência de Fibon:
+                    <br><br>
+                    <a class="links">Verifica se existe, se não, cria um arquivo e permite que o usuário escreva algo nele:</a> <br>
+                    <a class="programa">
+                        print('Criando Arquivo...') <br>
+                        arq = 'pokas.txt' <br><br>
+
+
+                        def arqExiste(arq): <br>
+                        try: <br>
+                        a = open(arq, 'rt') <br>
+                        a.close() <br>
+                        except FileNotFoundError: <br>
+                        return False <br>
+                        else: <br>
+                        return True <br> <br>
+
+                        def Escrita(arq): <br>
+                        try: <br>
+                        a = open(arq, 'at') <br>
+                        except: <br>
+                        print('ERRO!') <br>
+                        else: <br>
+                        try: <br>
+                        a.write(f'{inf};') <br>
+                        except: <br>
+                        print('ERRO!') <br>
+                        else: <br>
+                        print('Informações adicionadas!') <br>
+                        a.close() <br><br>
+
+
+                        if arqExiste(arq): <br>
+                        print('O arquivo já existe') <br> 
+
+                        else: <br>
+                        try: <br>
+                        a = open(arq, 'wt+') <br>
+                        a.close() <br>
+                        except: <br>
+                        print('ERRO!') <br>
+                        else: <br>
+                        print('O arquivo {} foi criado com sucesso!'.format(arq)) <br><br>
+
+                        print('Escrevendo no Arquivo...\n') <br>
+                        inf = str(input('Escreva no arquivo: ')) <br>
+                        Escrita(arq)<br>
+                        </a><br> <br>
+
+                        <a class="links">Lê o conteúdo de um arquivo:</a> <br>
+                        <a class="programa">
+                            arq = 'pokas.txt' <br> <br>
+
+                            def lerArquivo(arq): <br>
+                            try: <br>
+                            a = open(arq, 'rt') <br>
+                            except: <br>
+                            print('ERRO!') <br>
+                            else: <br>
+                            print(a.readlines()) <br>
+                            finally: <br>
+                            a.close() <br><br>
+
+                            lerArquivo(arq) <br>
+                            </a><br> 
+
+                        <a class="links">Deleta um arquivo:</a> <br>
+                        <a class="programa">
+                            import os <br>
+
+                            arq = 'pokas.txt' <br>
+                            os.remove(arq) <br>
+                            print('O arquivo {} foi deletado'.format(arq)) <br><br>
+                            </a>
+                </h4>
+            </div>
+
+
+            <div class="int">
+                <h1>➛ Video - Módulo 2:</h1>
+            </div>
+
+            <div class="text">
+                <h4>
+                    Para mais informações assista o vídeo do nosso canal no youtube: <br><br>
+                </h4>
+            </div>
+
+            <div class="text">
+                <h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PGV1O6teAS4?si=PB_VRwUsnBfutlmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></h4>
+                    <br>
+                </div>
+    
+    <nav class="geral">
+        <div a class="menu">
+            <i class='bx bx-menu' id="exp"></i>
+        </div>
+
+    <ul>
+        <div class="itens">
+        
+        <li class="item">
+            <a href="home.html">
+            <span class="icone"><i class='bx bx-home-alt-2' ></i></span>
+            <span class="link">Home</span>
+            </a>
+        </li>
+
+        <div class="active">
+        <li class="item">
+            <a href="hPyton.html">
+            <span class="icone"><i class='bx bxl-python'></i></span>
+            <span class="link">Python</span>
+            </div>
+            </a>
+        </li>
+
+
+        <li class="item">
+            <a href="#">
+            <span class="icone"><i class='bx bxs-memory-card'></i></span>
+            <span class="link">Arduino</span>
+            </a>
+        </li>
+
+        </div>
+    </ul>
+    </nav>
+
+
+    <script src="homeactive.js"></script>
+
+</body>
+</html>
